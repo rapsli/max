@@ -1,14 +1,25 @@
 <!DOCTYPE html> 
-<!--<html manifest="max.mf">-->
 <head>
 	<title>Max</title>
 	
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/book.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="phonegap.js"></script> 
+	<!--<script src="phonegap.js"></script> -->
 </head>
 <body>
+
+<div data-role="page" id="start">
+
+	<!--<canvas id="book-0" class="page"></canvas>-->
+	<div data-role="content">
+		<div class="page" id="startseite" >
+			startseite
+		</div>
+		<!--<a href="#page-1" data-transition="flip">I'll pop</a>-->
+	</div>
+
+</div>
 <div data-role="page" id="page-0">
 
 	<!--<canvas id="book-0" class="page"></canvas>-->
@@ -36,8 +47,14 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.mobile-1.2.0.min.js"></script>
+
+
 <script type="text/javascript" src="js/Page.js"></script>
+
 <script type="text/javascript" src="js/Book.js"></script>
+
+<audio id="audio" src="" preload="auto" style="position:absolute;display:none"></audio>
+<!-- -->
 <!--<script src="http://debug.phonegap.com/target/target-script-min.js#rapsli-12312312"></script>-->
 </body>
 </html>

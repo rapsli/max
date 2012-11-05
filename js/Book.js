@@ -1,9 +1,10 @@
 function Book() {
-	this.currentPage = 0;
+	this.currentPage = -1;
 	this.totalPages = 2;
 	var self = this;
 
 	this.setup = function() {
+		
 		$(document).bind("swipeleft", function(){
 			if (self.currentPage < self.totalPages-1) {
 				self.currentPage++;
@@ -22,15 +23,14 @@ function Book() {
 				self.updateAudio();
 				self.startAudio();
 			}
-
 		});
 
-		this.audioElement = new Audio("");
-		document.body.appendChild(this.audioElement);
 
+		this.audioElement = document.getElementById("audio");
 		this.updateAudio();
+
 		this.startAudio();
-		console.log("start it");
+
 	}
 
 	this.updateAudio = function() {
@@ -46,6 +46,8 @@ function Book() {
 	}
 }
 
-console.log("start it....");
-var book = new Book();
-book.setup();
+$(document).ready(function(){
+
+	var book = new Book();
+	book.setup();
+});
