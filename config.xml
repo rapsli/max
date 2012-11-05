@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "ch.webschaerfe.max"
+        versionCode="1" 
+        version   = "0.5">
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Max sucht das Gummibärchenland</name>
+
+    <description>
+        Bilderbuch. Max sucht das Gummibärchenland, erzählt von Raphael Schär 
+    </description>
+
+    <author href="http://rapsli.ch" email="info@rapsli.ch">
+        Raphael Schär
+    </author>
+    
+    <preference name="orientation" value="landscape" />
+</widget>
