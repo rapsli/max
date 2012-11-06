@@ -27,3 +27,10 @@ div.page {
 .ui-content {
 	padding: 0;
 }
+
+.ui-navbar {
+	position: absolute;
+	z-index: 100;
+	width: 100%;
+	top: 0;
+}

@@ -1,6 +1,6 @@
 function Book() {
 	this.currentPage = -1;
-	this.totalPages = 2;
+	this.totalPages = 11;
 	var self = this;
 
 	this.setup = function() {
@@ -9,7 +9,7 @@ function Book() {
 			if (self.currentPage < self.totalPages-1) {
 				self.currentPage++;
 				self.stopAudio();
-				$.mobile.changePage('#page-'+self.currentPage);
+				$.mobile.changePage('#page-'+self.currentPage, { transition: "slide"});
 				self.updateAudio();
 				self.startAudio();
 			}
@@ -47,7 +47,10 @@ function Book() {
 }
 
 $(document).ready(function(){
+	height = $(window).height();
+	width = $(window).width();
 
+	$('.page-wrapper').attr('style',"height:"+height+";width:"+width);
 	var book = new Book();
 	book.setup();
 });
